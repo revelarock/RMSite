@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <title>RM Linhas Aéreas</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="py-5 text-center">
+
+            </div>
+            <div class="panel panel-default">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label>Ida e Volta</label>
+                                    <input type="radio" name="ida-volta">
+                                </div>
+                                <div class="col-md-3">
+                                    <label>Somente Ida</label>
+                                    <input type="radio" name="ida-volta">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="partida">Partida</label>
+                                    <input id="partida" type="text" class="form-control"
+                                        placeholder="Cidade ou Aeroporto">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="destino">Destino</label>
+                                    <input id="destino" type="text" class="form-control"
+                                        placeholder="Cidade ou Aeroporto">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="ida">Partida</label>
+                                    <input id="ida" type="date" class="form-control">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="volta">Retorno</label>
+                                    <input id="volta" type="date" class="form-control">
+                                </div>
+                                <div class="col-md-2">
+                                    <label>Adultos (+18)</label>
+                                    <select class="custom-select d-block w-100">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label>Crianças</label>
+                                    <select class="custom-select d-block w-100">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label>Classe</label>
+                                    <select class="custom-select d-block w-100">
+                                        <option>Classe Econômica</option>
+                                        <option>Classe Executiva</option>
+                                        <option>Primeira Classe</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <br>
+
+                            <button id="pesquisar" class="btn btn-danger btn-lg" type="submit">Mostrar Voos</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; RM Soluções</p>
+    </footer>
+
+    <script src="js/app/index.js"></script>
+
+</body>
+
+</html>
